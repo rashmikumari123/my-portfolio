@@ -31,7 +31,7 @@ const Project = () => {
             <p>{project.description}</p>
             <p>Tech Stack: {project.tech_stack.join(', ')}</p>
 
-               {project.github && project.github.trim() !== "" && (
+               {project.link && project.link.trim() !== "" && (
             <a href={project.link} target="_blank" rel="noopener noreferrer">Live Demo</a>
             )}
 
@@ -52,3 +52,4 @@ const Project = () => {
 
 
 export default Project
+
